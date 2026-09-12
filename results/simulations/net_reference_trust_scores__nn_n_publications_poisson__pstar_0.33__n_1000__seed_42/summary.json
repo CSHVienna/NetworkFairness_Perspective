@@ -1,0 +1,24 @@
+{
+  "run_name": "net_reference_trust_scores__nn_n_publications_poisson__pstar_0.33__n_1000__seed_42",
+  "n_candidates": 1000,
+  "seed": 42,
+  "threshold_posterior": 0.5,
+  "threshold_payoff": 0.3333333333333333,
+  "accuracy_posterior": 0.995,
+  "accuracy_payoff": 0.991,
+  "precision_posterior": 0.9917127071823204,
+  "precision_payoff": 0.9808743169398907,
+  "recall_posterior": 0.9944598337950139,
+  "recall_payoff": 0.9944598337950139,
+  "realized_payoff": -550.0,
+  "per_signal_accuracy": {
+    "reference_quality": 0.966,
+    "n_publications": 0.954
+  },
+  "payoff_matrix": {
+    "hire_good": 0.0,
+    "hire_bad": -50.0,
+    "reject_good": -100.0,
+    "reject_bad": 0.0
+  }
+}

@@ -1,0 +1,38 @@
+bundle:
+  kind: network
+  name: reference_trust_scores
+signals:
+  referral_quality:
+    type: network
+    n_refs: 3
+    aggregation: sum
+    reference_scores:
+      excellent: 5
+      good: 4
+      average: 3
+      bad: 2
+      very_bad: 1
+    referee_trust:
+      trustworthy: 1
+      unknown: 0.0
+      untrustworthy: -1
+    reference_score_good_raw:
+      excellent: 0.48
+      good: 0.35
+      average: 0.10
+      bad: 0.05
+      very_bad: 0.02
+    reference_score_bad_raw:
+      excellent: 0.10
+      good: 0.47
+      average: 0.30
+      bad: 0.1
+      very_bad: 0.03
+    referee_trust_good_raw:
+      trustworthy: 0.85
+      unknown: 0.14
+      untrustworthy: 0.01
+    referee_trust_bad_raw:
+      trustworthy: 0.10
+      unknown: 0.55
+      untrustworthy: 0.35

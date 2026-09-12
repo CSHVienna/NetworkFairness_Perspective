@@ -1,0 +1,18 @@
+# Non-network signal: positive heavy-tailed score (e.g. citations, productivity).
+# LogNormal(mu, sigma): log(X) ~ Normal(mu, sigma).  Mean ≈ exp(mu + sigma²/2).
+bundle:
+  kind: non_network
+  name: n_citations_lognormal
+signals:
+  n_citations:
+    type: non_network
+    likelihood_good:
+      distribution: lognormal
+      params:
+        mu: 2.8
+        sigma: 0.5
+    likelihood_bad:
+      distribution: lognormal
+      params:
+        mu: 2.0
+        sigma: 0.50

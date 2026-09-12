@@ -1,0 +1,24 @@
+{
+  "run_name": "net_reference_trust_scores__nn_h_index_power_law__pstar_0.33__n_1000__seed_42",
+  "n_candidates": 1000,
+  "seed": 42,
+  "threshold_posterior": 0.5,
+  "threshold_payoff": 0.3333333333333333,
+  "accuracy_posterior": 0.965,
+  "accuracy_payoff": 0.965,
+  "precision_posterior": 0.9478021978021978,
+  "precision_payoff": 0.9381720430107527,
+  "recall_posterior": 0.9556786703601108,
+  "recall_payoff": 0.9667590027700831,
+  "realized_payoff": -2350.0,
+  "per_signal_accuracy": {
+    "reference_quality": 0.966,
+    "h_index": 0.696
+  },
+  "payoff_matrix": {
+    "hire_good": 0.0,
+    "hire_bad": -50.0,
+    "reject_good": -100.0,
+    "reject_bad": 0.0
+  }
+}

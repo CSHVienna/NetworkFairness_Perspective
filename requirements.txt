@@ -1,0 +1,20 @@
+# Core numerics
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+
+# Distributions (power-law fitting in libs/distributions/continuous.py)
+powerlaw>=1.5
+
+# Config
+pyyaml>=6.0
+
+# Plotting
+matplotlib>=3.7
+seaborn>=0.12
+
+# Optional: vector PDF embedding in libs/visualization/plots.py
+pymupdf>=1.23
+
+# Notebooks (code/notebooks/*.ipynb)
+jupyter>=1.0

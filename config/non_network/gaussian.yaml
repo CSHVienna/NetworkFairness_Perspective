@@ -1,0 +1,16 @@
+bundle:
+  kind: non_network
+  name: h_index_gaussian
+signals:
+  h_index:
+    type: non_network
+    likelihood_good:
+      distribution: normal
+      params:
+        mu: 18
+        sigma: 5.1
+    likelihood_bad:
+      distribution: normal
+      params:
+        mu: 10
+        sigma: 6.0

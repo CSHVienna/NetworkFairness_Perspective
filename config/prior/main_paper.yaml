@@ -1,0 +1,7 @@
+# Prior belief: probability that a candidate is "good".
+#
+# P(good) = 0.35 means we expect roughly 1 in 3 candidates to be
+# genuinely good before observing any signals.
+
+prior:
+  good: 0.35

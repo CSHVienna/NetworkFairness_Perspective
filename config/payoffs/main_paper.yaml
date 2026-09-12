@@ -1,0 +1,16 @@
+# Payoff matrix for the hiring decision.
+#
+# Four outcomes: (hire/reject) × (good/bad).
+# Correct decisions (hire good, reject bad) have payoff 0.
+# Errors are penalized: rejecting a good candidate costs more than hiring
+# a bad one, reflecting a preference to avoid false negatives when talent
+# is scarce.
+#
+# Optimal threshold: p* = (reject_bad - hire_bad) / (hire_good - hire_bad - reject_good + reject_bad)
+#                       = (0 - (-50)) / (0 - (-50) - (-100) + 0) = 50/150 ≈ 0.33
+
+payoffs:
+  hire_good: 0
+  hire_bad: -50
+  reject_good: -100
+  reject_bad: 0

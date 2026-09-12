@@ -1,0 +1,15 @@
+# Non-network signal bundle (combine with any network bundle via load_scenario or combine_model).
+bundle:
+  kind: non_network
+  name: n_publications_poisson
+signals:
+  n_publications:
+    type: non_network
+    likelihood_good:
+      distribution: poisson
+      params:
+        lam: 20
+    likelihood_bad:
+      distribution: poisson
+      params:
+        lam: 5

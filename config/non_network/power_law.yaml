@@ -1,0 +1,22 @@
+# Power-law (truncated) on [xmin, xmax].  Registered as "pareto" or "power_law".
+# Good type: lower alpha → heavier tail; xmin = 1 (min value), xmax = 150.
+# Bad type:  higher alpha → thinner tail; xmin = 1 (min value), xmax = 150.
+# Requires alpha > 1 for finite mean (used in plotting / grids).
+bundle:
+  kind: non_network
+  name: h_index_power_law
+signals:
+  h_index:
+    type: non_network
+    likelihood_good:
+      distribution: power_law
+      params:
+        alpha: 1.8
+        xmin: 1.0
+        xmax: 150
+    likelihood_bad:
+      distribution: power_law
+      params:
+        alpha: 2.8
+        xmin: 1.0
+        xmax: 150
