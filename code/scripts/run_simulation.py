@@ -227,7 +227,7 @@ def main() -> None:
         seed=args.seed,
         payoff_matrix=payoff_matrix,
     )
-    results = sim.simulate()
+    results = sim.simulate(top_k=None)
 
     print(f"\n{'='*60}")
     print(f"  Posterior rule (p >= 0.5)")
